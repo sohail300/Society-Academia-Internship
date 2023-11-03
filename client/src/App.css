@@ -1,0 +1,263 @@
+In App.css or a separate CSS file   
+
+/* Add padding to the "answer" rows to create white space */
+/* Add padding between question-answer pairs */
+
+
+.answer {
+  background: var(--Light-Green, #d9fbee);
+}
+
+body{
+  background-color: #fff;
+  background-blend-mode: multiply;
+  /* mix-blend-mode:multiply; */
+
+}
+
+.box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+AdminLogin.css .background {
+  background-color: #d9fbee;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.contact-us {
+  color: #000;
+  font-family: Klein Text Trial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.containerss {
+  background-color: #d9fbee;
+  min-height: 50vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.forms {
+  margin: 0 auto;
+  margin-left: 75vh;
+  margin-top: 5vh;
+}
+.forgot {
+  padding: 2vh;
+  margin-bottom: 5%;
+}
+
+.front-design {
+  width: 100vw;
+  height: 30vh;
+  flex-shrink: 0;
+  border-radius: 0vh 0vh 20vh 20vh;
+  background: var(
+    --Gradient-1,
+    linear-gradient(117deg, #031f13 -31.66%, #12ab69 104.59%)
+  );
+}
+
+.heading {
+  margin-top: 10vh;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.image {
+  height: 3vh;
+  width: 2vw;
+  margin-right: 2vh;
+}
+
+.logobg {
+  margin: 0 auto;
+  width: 20vw;
+  margin-left: 40%;
+}
+.middle-column {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-number {
+  color: #000;
+  font-family: Rubik;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar-bg {
+  background-color: #12ab69;
+}
+Replace with the desired dark pink color code .password {
+  color: #a0a0a0;
+  margin: 2vh;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-text {
+  border-radius: 8.278px;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.profile-options {
+  color: #000;
+  cursor: pointer;
+  font-size: 19.868px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.question {
+  background: #12ab69;
+  color: #000;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.radar {
+  color: #eb801b;
+}
+.sidebar {
+  position: fixed;
+  min-height: 90%;
+  min-width: 26.2%;
+  border-radius: 0 0 18% 0;
+  background: var(
+    --Gradient-1,
+    linear-gradient(117deg, #031f13 -31.66%, #12ab69 104.59%)
+  );
+}
+
+.submit {
+  margin: 0 auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: var(--base-white, #fff);
+  display: flex;
+  height: 38.595px;
+  padding: 9.649px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1.206px solid #fff;
+  background: var(--Primary, #12ab69);
+
+  border-radius: 10px;
+}
+
+.submit:hover {
+  box-shadow: 0px 0px 0px 1.20608px #04d2a9,
+    0px 1.20608px 2.41216px 0px rgba(31, 42, 55, 0.4);
+  border-radius: 10px;
+}
+
+.text-colour {
+  font-family: Reem Kufi;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user {
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 32vw;
+  margin-top: 3.2vh;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 1.5px 0px rgba(0, 0, 0, 0.25),
+    7.5px 7.5px 10.5px 0px rgba(0, 0, 0, 0.25),
+    -1.2px -1.5px 1.5px 0px rgba(255, 255, 255, 0.85),
+    -6px -6px 7.5px 0px rgba(255, 255, 255, 0.15);
+  height: 8vh;
+}
+
+.wider-input {
+  width: 35vw;
+}
+
+.rating {
+  display: flex;
+  background: #eee;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  position: relative;
+  width: 1.5em;
+  font-size: 4vw;
+  color: #12ab69;
+  cursor: pointer;
+}
+.rating > label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+  opacity: 0;
+}
+
+@media (max-width: 814px) {
+  /* Target a specific class, e.g., .my-class */
+  .box-wrapper {
+    margin-top: 0vh;
+  }
+  .containerss {
+    min-height: 20vh;
+  }
+  .front-design {
+    height: 16vh;
+    width: 100vw;
+    border-radius: 0vh 0vh 11vh 11vh;
+  }
+  .wider-input {
+    width: 65vw;
+    font-size: 1.5rem;
+  }
+  .user {
+    height: 134px;
+    width: 507px;
+  }
+
+  .image {
+    height: 2vh;
+    width: 7vw;
+  }
+}

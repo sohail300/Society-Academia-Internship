@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../react/mynewsapp"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Rescue_radar"
+	}
+}
