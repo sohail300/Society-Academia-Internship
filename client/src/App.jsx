@@ -18,6 +18,8 @@ import AboutUs from './components/AboutUs';
 function App() {
   return (
 <>
+<div style={{height:"100px", width:"100px", background:"#000"}}></div>
+    {/* <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/loginuser" element={<LoginUser />} />
@@ -34,6 +36,7 @@ function App() {
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/AboutUs" element={<AboutUs />} />
       </Routes>
+    </Router> */}
 </>
   );
 }
