@@ -6,7 +6,6 @@ import {Link , useNavigate } from 'react-router-dom';
 export default function AboutUs() {
     const Navigate = useNavigate();
 
-
     return (
         <div style={{ backgroundColor: "#EEEEEE", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
               <nav className="navbar navbar-expand-lg navbar-bg text-colour fixed-top" >
