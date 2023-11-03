@@ -2,7 +2,7 @@ import Arrow from '../images/Arrow.svg';
 import homepng from '../images/home.png'
 import { useNavigate } from 'react-router-dom';
 
-export default function Home() {
+export default function AdminHome() {
   const navigate = useNavigate();
 
   const homeBtnStyle = {
@@ -24,19 +24,16 @@ export default function Home() {
       <div className='component-box' style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", margin: "40px 0px" }}>
         <div>
 
-          <h1 style={{ textAlign: "center" }}>Housing Plan Approval Portal</h1>
+          {/* <h1 style={{ textAlign: "center" }}>Housing Plan Approval Portal</h1> */}
           <br />
 
-          <div className='home-btn' style={{ ...homeBtnStyle, backgroundColor: "#92DAFF" }} onClick={() => navigate('/register')}  >
-            <h3 style={{ marginLeft: "4vh", textAlign: "left", margin: "auto 2vw", fontSize: "1.5rem" }}>REGISTER</h3>
+          <div className='home-btn' style={{ ...homeBtnStyle, backgroundColor: "#92DAFF" }} onClick={() => navigate('/checkmap')}  >
+            <h3 style={{ marginLeft: "4vh", textAlign: "left", margin: "auto 2vw", fontSize: "1.5rem" }}>CHECK MAP</h3>
             <img src={Arrow} alt="" />
           </div>
-          <div className='home-btn' style={{ ...homeBtnStyle, backgroundColor: "#FF7E7E" }} onClick={() => navigate('/loginuser')}>
-            <h3 style={{ marginLeft: "4vh", textAlign: "left", margin: "auto 2vw", fontSize: "1.5rem" }}>LOGIN</h3>
+          <div className='home-btn' style={{ ...homeBtnStyle, backgroundColor: "#FF7E7E" }} onClick={() => navigate('/pastmap')}>
+            <h3 style={{ marginLeft: "4vh", textAlign: "left", margin: "auto 2vw", fontSize: "1.5rem" }}>PAST UPLOADS</h3>
             <img src={Arrow} alt="" />
-          </div>
-          <div className='home-btn' style={{ ...homeBtnStyle, backgroundColor: "#8bff62" }} onClick={() => navigate('/loginadmin')}>
-            <h3 style={{ marginLeft: "4vh", textAlign: "left", margin: "auto 2vw", fontSize: "1.5rem" }}>LOGIN AS ADMIN</h3><img src={Arrow} alt="" />
           </div>
         </div>
         <img src={homepng} alt="" height="480px" style={{ mixBlendMode: "" }} />
@@ -45,3 +42,4 @@ export default function Home() {
     </>
   );
 }
+

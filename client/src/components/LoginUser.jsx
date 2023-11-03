@@ -1,7 +1,10 @@
 import React from 'react';
 import './Login.css'
+import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const LoginUser = () => {
+  const navigate=useNavigate();
+
   return (
         <div className="center">
           <h1>Login</h1>
@@ -17,11 +20,12 @@ const Login = () => {
             <div className="pass">Forgot Password?</div>
             <input type="submit" value="Login" />
             <div className="signup_link">
-              Haven't signed up yet? <a href="#">Register</a>
+              Haven't signed up yet? <span style={{textDecoration:"underline", color:"#3299de", cursor:"pointer"}} onClick={()=> navigate('/register')}>Register</span>
+              
             </div>
           </form>
         </div>
   );
 };
 
-export default Login;
+export default LoginUser;
