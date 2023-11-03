@@ -18,7 +18,6 @@ import AboutUs from './components/AboutUs';
 function App() {
   return (
 <>
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/loginuser" element={<LoginUser />} />
@@ -35,7 +34,6 @@ function App() {
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/AboutUs" element={<AboutUs />} />
       </Routes>
-    </Router>
 </>
   );
 }
